@@ -1,0 +1,34 @@
+//
+//  main.cpp
+//  Reverser
+//
+//  Created by Shobhith M on 16/09/18.
+//  Copyright © 2018 Shobhicode. All rights reserved.
+//
+
+#include <iostream>
+#include "math.h"
+using namespace std;
+int main() {
+    int count,num,a,ram,moder,printer,dat=0,quado;
+    cout<<"Welcome\n";
+    cout<<"Number Reverser\n";
+    cout<<"Enter the number of digits of the number you want to reverse\n";
+    cin>>count;
+    dat=count;
+    cout<<"\nEnter the Number\n";
+    cin>>num;
+    printer=0;
+    for (a=1; a<=count; a++) {
+        moder=pow(10,dat);
+        
+        quado=pow(10,a);
+        ram=num%10;
+        num=num/10;
+        printer=printer+ram*moder/10;
+        cout<<"Moder...."<<moder;cout<<"\n"<<"quado...."<<quado<<"\n Ram...."<<ram<<"\n   num..."<<num<<"\n printer "<<printer<<"\n";
+        dat--;
+    }
+    cout<<"The reverse is....."<<printer;
+    
+}

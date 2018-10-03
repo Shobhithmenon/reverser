@@ -26,8 +26,7 @@ int main() {
         ram=num%10;
         num=num/10;
         printer=printer+ram*moder/10;
-        cout<<"Moder...."<<moder;cout<<"\n"<<"quado...."<<quado<<"\n Ram...."<<ram<<"\n   num..."<<num<<"\n printer "<<printer<<"\n";
-        dat--;
+       
     }
     cout<<"The reverse is....."<<printer;
     
